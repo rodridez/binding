@@ -14,6 +14,7 @@ h1 {
     font-size: calc(6* var(--font-size));
     line-height: calc(3* var(--line-height));
     font-weight: 800;
+    color: var(--highlight-color);
     margin-bottom: calc(4* var(--line-height));
     margin-top: calc(6* var(--line-height));
     text-transform: uppercase;
@@ -23,6 +24,7 @@ h2 {
     font-size: calc(1.5* var(--font-size));
     line-height: calc(1* var(--line-height));
     font-weight: 800;
+    color: var(--highlight-color);
     margin-bottom: calc(1* var(--line-height));
     margin-top: calc(2* var(--line-height));
 }

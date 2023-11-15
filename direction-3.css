@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+:root{
+    --font-headings: 'Playfair Display', serif;
+    --base-font: 'IBM Plex Sans', sans-serif;
+    --font-size: 25px;
+    --line-height: 44px;
+    --color: #14263b;
+    --highlight-color: #34335c;
+    --background-color: #fd737e;
+    --spacing: 20px;
+    --paragraph-limit: 70ch;
+    --indentation: 50px;
+}
+
+h1 {
+    text-transform: none;
+    font-weight: 400;
+    line-height: calc(2.5* var(--line-height));
+    letter-spacing: -.2rem;
+}
+
+h2 {
+    font-weight: 300;
+    letter-spacing: -.025rem;
+}
+
+blockquote {
+    font-style: italic; 
+    font-weight: 300;
+    font-family: var(--font-headings);
+    font-size: calc(1.5* var(--font-size));
+    line-height: calc(1.25* var(--line-height));
+    margin-left: calc(1* var(--indentation));
+    margin-right: calc(-1* var(--indentation));
+    opacity: 70%;
+}
