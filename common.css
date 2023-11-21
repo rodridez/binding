@@ -4,6 +4,8 @@ body {
     margin: auto;
     max-width: 800px;
     background-color: var(--background-color);
+    overflow-x: hidden;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
