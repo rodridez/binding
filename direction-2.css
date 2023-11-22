@@ -33,3 +33,11 @@ blockquote {
     /* font-style: italic; 
     font-weight: 300; */
 }
+
+nav div {
+    border-color: #ffffff;
+}
+
+nav p {
+    max-width: 100%;
+}

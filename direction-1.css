@@ -15,6 +15,15 @@
     --indentation: 150px;
 }
 
+#side-a {
+    font-family: 'Gloock', serif;
+    font-weight: 500;
+}
+
+#side-b {
+    font-weight: 500;
+}
+
 p {
     font-size: calc(0.9* var(--font-size));
 }
