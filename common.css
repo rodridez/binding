@@ -2,10 +2,10 @@ body {
     padding-left: var(--spacing);
     padding-right: var(--spacing);
     margin: auto;
-    max-width: 800px;
+    max-width: 1200px;
     background-color: var(--background-color);
     overflow-x: hidden;
-    width: 100%;
+    
 }
 
 h1, h2, h3, h4, h5 {
@@ -43,17 +43,69 @@ p, em {
 
 blockquote {
     font-family: var(--base-font);
-    font-size: calc(3* var(--font-size));
-    line-height: calc(1.75* var(--line-height));
+    font-size: calc(1.5* var(--font-size));
+    line-height: calc(1* var(--line-height));
     font-weight: 800;
     color: var(--color);
     max-width: var(--paragraph-limit);
-    margin-top: calc(2* var(--line-height));
-    margin-bottom: calc(2* var(--line-height));
-    margin-left: calc(-1* var(--indentation));
-    margin-right: calc(1* var(--indentation));
+    margin-top: calc(1.5* var(--line-height));
+    margin-bottom: calc(1.5* var(--line-height));
+    padding-left: 30px;
+    border-left-style: solid;
+    /* margin-left: calc(-1* var(--indentation));
+    margin-right: calc(1* var(--indentation)); */
 }
 
 em {
     opacity: 50%;
 }
+
+
+
+
+/* Stuff to add to media queary I will create in the future */
+
+/* Indentation */
+
+/* h1, h2, h3, h4, h5, p {
+    margin-left: 60px;
+} */
+
+/* h1 {
+    font-size: calc(6* var(--font-size));
+    line-height: calc(3* var(--line-height));
+    font-weight: 800;
+    margin-bottom: calc(4* var(--line-height));
+    margin-top: calc(6* var(--line-height));
+}
+
+h2 {
+    font-size: calc(1.5* var(--font-size));
+    line-height: calc(1* var(--line-height));
+    font-weight: 800;
+    margin-bottom: calc(1* var(--line-height));
+    margin-top: calc(2* var(--line-height));
+}
+
+p, em {
+    font-family: var(--base-font);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-weight: 300;
+    max-width: var(--paragraph-limit);
+    margin-bottom: var(--line-height);
+}
+
+blockquote {
+    font-family: var(--base-font);
+    font-size: calc(3* var(--font-size));
+    line-height: calc(1.75* var(--line-height));
+    font-weight: 800;
+    max-width: var(--paragraph-limit);
+    margin-top: calc(2* var(--line-height));
+    margin-bottom: calc(2* var(--line-height));
+    margin-left: calc(-1* var(--indentation));
+    margin-right: calc(1* var(--indentation));
+} */
+
+

@@ -1,4 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,800;0,900;1,300;1,400;1,500;1,800;1,900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+
+:root{
+    --font-headings:  'Gloock', serif;
+    --base-font: 'Hanken Grotesk', sans-serif;
+    --font-size: 25px;
+    --line-height: 38px;
+    --color: #1F2125;
+    --highlight-color: #1F2125;
+    --background-color: #ffffff;
+    --spacing: 20px;
+    --paragraph-limit: 70ch;
+    --indentation: 150px;
+}
+
+p {
+    font-size: calc(0.9* var(--font-size));
+}
+
+h1 {
+    text-transform: none;
+    font-size: calc(5* var(--font-size));
+    letter-spacing: .2rem;
+    line-height: calc(3* var(--line-height));
+    font-weight: 500;
+}
+
+h2 {
+    letter-spacing: .1rem;
+}
+
+blockquote {
+    font-family: 'Hanken Grotesk', sans-serif;;
+    /* font-style: italic; 
+    font-weight: 300; */
+}
+
+
+/* Past back up to direcrtion 1 if needed
 
 :root{
     --font-headings: 'Hanken Grotesk', sans-serif;
@@ -11,4 +51,4 @@
     --spacing: 20px;
     --paragraph-limit: 60ch;
     --indentation: 150px;
-}
+} */
