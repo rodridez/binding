@@ -83,8 +83,36 @@ blockquote {
 em {
     opacity: 50%;
 }
+/* =============================================== Header =============================================== */
 
-/* ========================================== Nav Bar ==========================================*/
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: var(--color);
+}
+    
+    header h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        font-size: calc(1.5* var(--font-size));
+        font-weight: 800;
+}
+
+header h1:nth-child(2) {
+    margin-top: 13px;
+}
+
+.no-header {
+    display: none;
+}
+
+
+/* =============================================== Nav Bar ============================================== */
 
 
 nav {
@@ -104,7 +132,7 @@ nav div {
     height: 50px;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
-    border-color: #1F2125;
+    border-color: var(--color);
     padding: 10px;
 }
 
@@ -206,6 +234,7 @@ footer {
     border-top: solid;
     border-width: 2px;
     padding-top: 10px;
+    border-color: var(--color);
 }
 
 footer p {
@@ -402,6 +431,24 @@ footer p {
     .link-arrow {
         font-size: calc(2* var(--font-size));
     }
+    /* ===================== header ===================== */
+
+    header h1 {
+        font-size: calc(2* var(--font-size));
+    }
+
+    .header-not-home h1 {
+        font-size: calc(1* var(--font-size));
+        line-height: calc(1* var(--line-height));
+    }
+
+    .header-not-home h1:nth-child(2) {
+        margin-top: 12px;
+    }
+
+    .no-header {
+        display: flex;
+    }
 
      /* ===================== Footer ===================== */
 
@@ -411,7 +458,6 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        border-top: solid;
         border-width: 2px;    
     }
 
