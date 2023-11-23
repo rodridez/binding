@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,800;0,900;1,300;1,400;1,500;1,800;1,900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+
+/*========================================== Utility Tags ==========================================*/
+
+.font-light {
+    font-family: 'Gloock', serif;
+}
+
+.font-light-color {
+    --color: #ffffff;
+}
+
+.font-dark {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+/*========================================== General Styles ==========================================*/
+
 body {
     padding-left: var(--spacing);
     padding-right: var(--spacing);
@@ -60,12 +84,19 @@ em {
     opacity: 50%;
 }
 
-/* ---------- Nav Bar ------------ */
+/* ========================================== Nav Bar ==========================================*/
+
+
 nav {
     display: grid;
 	grid-template-rows: repeat(5, 1fr);
     align-self: center;
     justify-self: center;
+}
+
+nav div:first-child {
+    display: flex;
+    justify-content: space-between;
 }
 
 nav div {
@@ -94,12 +125,75 @@ nav em {
     line-height: calc(.75* var(--line-height));
 }
 
+/* ========================================== Home Background ========================================== */
+
+ #background-home {
+    position: absolute;  
+    display: flex;
+	flex-direction: column;  
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.blackside {
+    background-color: tomato;
+    height: 50vh;
+    width: 100vw;
+}
+
+.whiteside {
+    background-color: #cac5ff;
+    height: 50vh;
+    width: 100vw;
+}
+
+main a {
+    font-size: calc(2.5* var(--font-size));
+    line-height: calc(1* var(--line-height));
+    font-weight: 800;
+}
+
+main p {
+    margin-bottom: 0px;
+}
+
+#home-main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#home-main div {
+    height: 50%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#home-main div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+main p:nth-of-type(3) {
+    margin-top: 30px;
+}
 
 
-/*========================================== Breakpoint 768px ==========================================*/
+
+
+/* ====================================================================================================== */
+/* ========================================== Breakpoint 768px ========================================== */
+/* ====================================================================================================== */
 
 @media (min-width: 768px){
 
+    .hidden-mobile {
+        display: revert;
+    }
 
     /* Indentation */
 
@@ -145,36 +239,49 @@ nav em {
     }
 
     /* ===================== Nav Bar ===================== */
+    
+    
+    
     nav {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        /* display: grid; */
+        grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 1fr;
-        align-self: center;
-        justify-self: center;
+        /* align-self: center;
+        justify-self: center; */
         margin-top: 50px;
+        margin-bottom: 50px;
 
+    }
+
+    nav div:first-child {
+        display: revert;
     }
 
     nav div {
         height: 100px;
-        border-style: solid;
-        border-width: 2px 0px 2px 2px;
-        border-color: #1F2125;
-        padding: 10px;
-        padding-top: 30px;
+        /* border-width: 2px 0px 2px 2px; */
+        border-width: 0px 0px 2px 0px;
+        /* border-color: #1F2125;
+        padding: 10px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav p {
+        padding-bottom: var(--spacing);
     }
 
     nav div:first-child {
-        border-radius: 5px 0px 0px 5px;
+        /* border-radius: 5px 0px 0px 5px; */
     }
 
     nav div:last-child  {
-        border-radius: 0px 5px 5px 0px;
-        border-right-width: 2px;
+        /* border-radius: 0px 5px 5px 0px;
+        border-right-width: 2px; */
     }
 
     nav div:nth-child(-n+2) {
-        padding-top: 35px;
+        /* padding-top: 35px; */
     }
 
     nav p {
@@ -213,5 +320,56 @@ nav em {
     nav div:nth-child(-n+2) {
         padding-top: 35px;
     } */
+
+    /* ===================== Home Background ===================== */
+
+    #background-home {
+	    flex-direction: row;  
+    }
+
+    main a {
+        font-size: calc(4* var(--font-size));
+        line-height: calc(2* var(--line-height));
+    }
+
+    main p {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    main p:nth-of-type(2) {
+        margin-bottom: 50px;
+    }
+
+    #home-main {
+        display: flex;
+	    flex-direction: row;
+        height: 100%;
+    }
+
+    #home-main div {
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #home-main div:first-child {
+        text-align: right;
+        padding-top: 200px;
+    }
+
+    .blackside {
+        height: 100vh;
+        width: 50vw;
+    }
+
+    .whiteside {
+        height: 100vh;
+        width: 50vw;
+    }
+
+    .link-arrow {
+        font-size: calc(2* var(--font-size));
+    }
 
 }
