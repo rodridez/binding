@@ -182,7 +182,37 @@ main p:nth-of-type(3) {
     margin-top: 30px;
 }
 
+/* =============================================== Footer =============================================== */
 
+footer {
+    width: 100%;
+    position: relative; 
+    bottom: 10px;
+    left: 0px;
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+}
+
+.footer-home {
+    position: absolute;
+}
+
+.desktop-footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid;
+    border-width: 2px;
+    padding-top: 10px;
+}
+
+footer p {
+    font-size: calc(.75* var(--font-size));
+    line-height: calc(.75* var(--line-height));
+    margin-bottom: 0px;
+}
 
 
 /* ====================================================================================================== */
@@ -255,6 +285,7 @@ main p:nth-of-type(3) {
 
     nav div:first-child {
         display: revert;
+        text-align: left;
     }
 
     nav div {
@@ -285,7 +316,7 @@ main p:nth-of-type(3) {
     }
 
     nav p {
-        text-align: center;
+        /* text-align: center; */
         vertical-align: middle;
         margin: 0px;
         font-size: calc(.75* var(--font-size));
@@ -371,5 +402,22 @@ main p:nth-of-type(3) {
     .link-arrow {
         font-size: calc(2* var(--font-size));
     }
+
+     /* ===================== Footer ===================== */
+
+
+    .desktop-footer {
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: solid;
+        border-width: 2px;    
+    }
+
+    footer p {
+        margin-left: 0px;
+    }
+
 
 }
