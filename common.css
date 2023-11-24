@@ -99,7 +99,7 @@ header {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 0px;
-        font-size: calc(1.5* var(--font-size));
+        font-size: calc(1.25* var(--font-size));
         font-weight: 800;
 }
 
@@ -191,11 +191,12 @@ main p {
 #home-main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    padding-top: 90px;
 }
 
 #home-main div {
-    height: 50%;
+    height: 40%;
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -209,6 +210,11 @@ main p {
 main p:nth-of-type(3) {
     margin-top: 30px;
 }
+
+.right-side {
+    font-size: calc(1.75* var(--font-size));
+}
+    
 
 /* =============================================== Footer =============================================== */
 
@@ -352,6 +358,7 @@ footer p {
         display: flex;
 	    flex-direction: row;
         height: 100%;
+        padding-top: 0px;
     }
 
     #home-main div {
@@ -377,6 +384,12 @@ footer p {
 
     .link-arrow {
         font-size: calc(2* var(--font-size));
+        line-height: calc(.1* var(--line-height));
+        background-color: aqua;
+    }
+
+    .right-side {
+        font-size: calc(3.5* var(--font-size));
     }
     /* ===================== header ===================== */
 
