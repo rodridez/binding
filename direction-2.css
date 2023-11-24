@@ -18,9 +18,9 @@
 
 h1 {
     text-transform: none;
-    font-size: calc(5* var(--font-size));
+    /* font-size: calc(5* var(--font-size)); */
     letter-spacing: .2rem;
-    line-height: calc(3* var(--line-height));
+    /* line-height: calc(3* var(--line-height)); */
     font-weight: 500;
 }
 
