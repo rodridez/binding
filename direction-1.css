@@ -8,6 +8,7 @@
     --font-size: 25px;
     --line-height: 38px;
     --color: #1F2125;
+    --color-2: #ffffff;
     --highlight-color: #1F2125;
     --background-color: #ffffff;
     --spacing: 20px;
@@ -31,7 +32,7 @@ p {
 h1 {
     text-transform: none;
     /* font-size: calc(5* var(--font-size)); */
-    letter-spacing: .2rem;
+    /* letter-spacing: .2rem; */
     /* line-height: calc(3* var(--line-height)); */
     font-weight: 500;
 }

@@ -10,6 +10,12 @@
 
 .font-light-color {
     --color: #ffffff;
+    --highlight-color: #ffffff;
+}
+
+.font-color-swap {
+    --color: #1F2125;
+    --highlight-color: #ffffff;
 }
 
 .font-dark {
@@ -86,13 +92,13 @@ em {
 /* =============================================== Header =============================================== */
 
 header {
-    width: 100%;
+    width: 99%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border-bottom: solid;
     border-width: 2px;
-    border-color: var(--color);
+    border-color: var(--color-2);
 }
     
     header h1 {
@@ -101,10 +107,6 @@ header {
         margin-left: 0px;
         font-size: calc(1.25* var(--font-size));
         font-weight: 800;
-}
-
-header h1:nth-child(2) {
-    margin-top: 13px;
 }
 
 .no-header {
@@ -167,13 +169,13 @@ nav em {
 }
 
 .blackside {
-    background-color: tomato;
+    background-color: #1F2125;
     height: 50vh;
     width: 100vw;
 }
 
 .whiteside {
-    background-color: #cac5ff;
+    background-color: #ffffff;
     height: 50vh;
     width: 100vw;
 }
@@ -191,8 +193,8 @@ main p {
 #home-main {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding-top: 90px;
+    height: 85vh;
+    justify-content: center;
 }
 
 #home-main div {
@@ -258,6 +260,11 @@ footer p {
 
     .hidden-mobile {
         display: revert;
+    }
+
+    .font-color-swap {
+        --color: #ffffff;
+        --highlight-color: #1F2125;
     }
 
     /* Indentation */
@@ -357,19 +364,23 @@ footer p {
     #home-main {
         display: flex;
 	    flex-direction: row;
-        height: 100%;
+        height: 82vh;
         padding-top: 0px;
     }
 
     #home-main div {
         width: 50%;
+        height: 100%;
         padding-left: 20px;
         padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #home-main div:first-child {
         text-align: right;
-        padding-top: 200px;
+        justify-content: center;
     }
 
     .blackside {
@@ -385,13 +396,17 @@ footer p {
     .link-arrow {
         font-size: calc(2* var(--font-size));
         line-height: calc(.1* var(--line-height));
-        background-color: aqua;
     }
 
     .right-side {
         font-size: calc(3.5* var(--font-size));
     }
     /* ===================== header ===================== */
+
+    header {
+        border-color: var(--color);
+        border-width: 0px;
+    }
 
     header h1 {
         font-size: calc(2* var(--font-size));
@@ -406,6 +421,10 @@ footer p {
         margin-top: 12px;
     }
 
+    header h1:nth-child(2) {
+        margin-top: 13px;
+    }
+
     .no-header {
         display: flex;
     }
@@ -418,11 +437,31 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        border-width: 2px;    
+        border-width: 0px;    
     }
 
     footer p {
         margin-left: 0px;
+    }
+
+    .two-color-border {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .border-light {
+        background-color: var(--color-2);
+        height: 2px;
+        width: 50%;
+    }
+    
+    .border-dark {
+        background-color: var(--color);
+        height: 2px;
+        width: 50%;
     }
 
 
