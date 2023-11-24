@@ -3,7 +3,7 @@
 
 
 :root{
-    --font-headings:  'Gloock', serif;
+    --font-headings:  'Hanken Grotesk', sans-serif;
     --base-font: 'Hanken Grotesk', sans-serif;
     --font-size: 25px;
     --line-height: 38px;
@@ -12,29 +12,28 @@
     --highlight-color: #1F2125;
     --background-color: #ffffff;
     --spacing: 20px;
-    --paragraph-limit: 70ch;
+    --paragraph-limit: 60ch;
     --indentation: 150px;
 }
 
-#side-a {
+.side-a {
     font-family: 'Gloock', serif;
     font-weight: 800;
 }
 
-#side-b {
+.side-b {
+    font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 800;
 }
 
 p {
-    font-size: calc(0.9* var(--font-size));
+    font-size: calc(0.8* var(--font-size));
+    line-height: calc(.8* var(--line-height));
 }
 
 h1 {
     text-transform: none;
-    /* font-size: calc(5* var(--font-size)); */
-    /* letter-spacing: .2rem; */
-    /* line-height: calc(3* var(--line-height)); */
-    font-weight: 500;
+    font-weight: 800;
 }
 
 h2 {
@@ -45,18 +44,20 @@ blockquote {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+@media (min-width: 768px) {
 
-/* Past back up to direcrtion 1 if needed
+    header {
+        width: 100%;
+        border-width: 0px 0px 2px 0px;
+    }
+    
+    .desktop-footer {
+        border-width: 2px 0px 0px 0px;
+    }
 
-:root{
-    --font-headings: 'Hanken Grotesk', sans-serif;
-    --base-font: 'Hanken Grotesk', sans-serif;
-    --font-size: 22px;
-    --line-height: 36px;
-    --color: #000000;
-    --highlight-color: #;
-    --background-color: #CECECE;
-    --spacing: 20px;
-    --paragraph-limit: 60ch;
-    --indentation: 150px;
-} */
+    p {
+        font-size: calc(0.9* var(--font-size));
+        line-height: var(--line-height);
+    }
+
+}
