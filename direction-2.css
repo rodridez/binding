@@ -46,6 +46,27 @@ nav p {
 }
 
 
+.other-quote {
+    font-size: calc(.8* var(--font-size));
+    line-height: calc(.75* var(--line-height));
+    font-weight: 500;
+    padding: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    background-color: var(--color);
+    color: var(--background-color);
+
+}
+
+.quote-line {
+    background-color: var(--color);
+    min-width: 2px;
+    margin-top: -20px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+}
+
+
 
 @media (min-width: 768px) {
 
@@ -56,6 +77,15 @@ nav p {
     
     .desktop-footer {
         border-width: 2px 0px 0px 0px;
+    }
+
+    blockquote {
+        line-height: calc(2* var(--line-height))
+    }
+
+    .other-quote {
+        font-size: calc(.9* var(--font-size));
+        line-height: calc(.9* var(--line-height));
     }
 
 

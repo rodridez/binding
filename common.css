@@ -87,8 +87,19 @@ blockquote {
 }
 
 em {
+    font-style: italic;
+}
+
+.faded {
     opacity: 50%;
 }
+
+.pause {
+    text-align: center;
+    padding-top: calc(2* var(--spacing));
+    padding-bottom: calc(2* var(--spacing));
+}
+
 /* =============================================== Header =============================================== */
 
 header {
@@ -155,6 +166,19 @@ nav em {
     line-height: calc(.75* var(--line-height));
 }
 
+/* ============================================ Side Quotes =========================================== */
+
+.side-quote {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(2* var(--spacing));
+    margin-bottom: calc(2* var(--spacing));
+}
+
+.side-quote-div em {
+    padding-left: 20px;
+}
+
 /* ========================================== Home Background ========================================== */
 
  #background-home {
@@ -215,6 +239,12 @@ main p:nth-of-type(3) {
 
 .right-side {
     font-size: calc(1.75* var(--font-size));
+}
+
+.link-arrow {
+    font-size: calc(.75* var(--font-size));
+    line-height: calc(.1* var(--line-height));
+    padding-left: 2px;
 }
     
 
@@ -342,6 +372,21 @@ footer p {
         margin: 0px;
     }
 
+    /* ===================== Side Quote ===================== */
+
+    .side-quote {
+        flex-direction: row;
+        margin-bottom: calc(2* var(--spacing));
+
+    }
+
+    .side-quote p {
+        margin-bottom: 0;
+    }
+    
+    .side-quote-div {
+        min-width: 35%
+    }
 
     /* ===================== Home Background ===================== */
 
