@@ -100,6 +100,64 @@ em {
     padding-bottom: calc(2* var(--spacing));
 }
 
+/* =========================================== general links ============================================ */
+
+a {
+    text-decoration: underline;
+    opacity: 85%;
+}
+
+a:hover {
+    text-decoration: none;
+    position: relative;
+    left: 3px;
+    bottom: 3px;
+    animation: SandCastle 30s;
+}
+
+.link-home {
+    text-decoration: none;
+    opacity: 100%;
+}
+
+.link-home:hover {
+    text-decoration: underline;
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    opacity: 100%;
+}
+
+.link-nav {
+    text-decoration: none;
+    opacity: 100%;
+}
+
+.link-nav:hover {
+    position: relative;
+    left: 3px;
+    bottom: 3px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    opacity: 100%;
+}
+
+@keyframes SandCastle {
+    0% {
+        opacity: 100%;
+    }
+    10% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+
 /* =============================================== Header =============================================== */
 
 header {
