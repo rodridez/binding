@@ -16,7 +16,7 @@
     --indentation: 150px;
 }
 
-p::selection {
+p::selection, blockquote::selection, h1::selection, h2::selection, em::selection {
     color: var(--color-2);
     background-color: var(--color);
     /* font-family: 'Cormorant', serif; */

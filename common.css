@@ -101,6 +101,17 @@ em {
     padding-bottom: calc(2* var(--spacing));
 }
 
+.large {
+    font-size: calc(.8* var(--font-size));
+    line-height: calc(.8* var(--line-height));
+    font-weight: 300;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border-bottom: solid;
+    border-width: 2px;
+    padding-bottom: var(--spacing);
+}
+
+
 /* =========================================== general links ============================================ */
 
 a {
@@ -144,6 +155,10 @@ a:hover {
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
     opacity: 100%;
+}
+
+blockquote:hover {
+    animation: SandCastle 30s;
 }
 
 @keyframes SandCastle {
@@ -410,6 +425,13 @@ footer p {
         /* margin-left: calc(-.25* var(--indentation)); */
         margin-right: calc(1* var(--indentation));
     }
+
+
+.large {
+    font-size: calc(1.1* var(--font-size));
+    line-height: calc(1.1* var(--line-height));
+    padding-bottom: calc(3* var(--spacing));
+}
 
     /* ===================== Nav Bar ===================== */
     
