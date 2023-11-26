@@ -9,11 +9,22 @@
     --font-size: 25px;
     --line-height: 38px;
     --color: #ffffff;
+    --color-2: #1F2125;
     --highlight-color: #ffffff;
     --background-color: #1F2125;
     --spacing: 20px;
     --paragraph-limit: 60ch;
     --indentation: 150px;
+}
+
+p::selection {
+    color: var(--color-2);
+    background-color: var(--color);
+}
+
+.other-quote::selection {
+    color: var(--color);
+    background-color: var(--color-2);
 }
 
 .side-a {

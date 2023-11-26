@@ -28,6 +28,7 @@
 
 /*========================================== General Styles ==========================================*/
 
+
 body {
     padding-left: var(--spacing);
     padding-right: var(--spacing);
@@ -272,6 +273,10 @@ main p {
     margin-bottom: 0px;
 }
 
+main div:nth-of-type(1) p:first-child {
+    letter-spacing: 2px;
+}
+
 #home-main {
     display: flex;
     flex-direction: column;
@@ -297,12 +302,16 @@ main p:nth-of-type(3) {
 
 .right-side {
     font-size: calc(1.75* var(--font-size));
+    font-weight: 1000;
 }
 
 .link-arrow {
     font-size: calc(.75* var(--font-size));
-    line-height: calc(.1* var(--line-height));
-    padding-left: 2px;
+    line-height: calc(-2* var(--line-height));
+    position: relative;
+    left: 2px;
+    bottom: 2px;
+
 }
     
 
@@ -327,12 +336,13 @@ footer {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     border-top: solid;
     border-width: 2px;
     padding-top: 10px;
     border-color: var(--color);
+    justify-content: space-between;
 }
 
 footer p {
@@ -499,12 +509,14 @@ footer p {
     }
 
     .link-arrow {
-        font-size: calc(2* var(--font-size));
+        font-size: calc(1.5* var(--font-size));
         line-height: calc(.1* var(--line-height));
     }
 
     .right-side {
-        font-size: calc(3.5* var(--font-size));
+        font-size: calc(2.5* var(--font-size));
+        line-height: calc(1.5* var(--line-height));
+        font-weight: 1000;
     }
     /* ===================== header ===================== */
 
@@ -569,5 +581,20 @@ footer p {
         width: 50%;
     }
 
+
+}
+
+/* ====================================================================================================== */
+/* ============================================= bug fixes ============================================== */
+/* ====================================================================================================== */
+
+
+/* == this solves for the second link in the nav bar being 2 lines */
+@media (max-width: 363px){
+
+    nav div:nth-child(4) {
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
 
 }

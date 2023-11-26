@@ -16,6 +16,17 @@
     --indentation: 150px;
 }
 
+p::selection {
+    color: var(--color-2);
+    background-color: var(--color);
+    /* font-family: 'Cormorant', serif; */
+}
+
+.other-quote::selection {
+    color: var(--color);
+    background-color: var(--color-2);
+}
+
 .side-a {
     font-family: 'Gloock', serif;
     font-weight: 800;
