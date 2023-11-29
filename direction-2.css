@@ -57,6 +57,13 @@ blockquote {
     font-weight: 600;
 }
 
+a {
+    text-decoration-color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+}
 
 nav p {
     max-width: 100%;
@@ -83,6 +90,9 @@ nav p {
     margin-left: 30px;
 }
 
+/* .top-button a {
+    background-color: var(--background-color);
+} */
 
 
 @media (min-width: 768px) {
