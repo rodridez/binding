@@ -100,6 +100,10 @@ blockquote {
         line-height: var(--line-height);
     }
 
+    blockquote {
+        line-height: calc(1.95* var(--line-height));
+    }
+
     .other-quote {
         font-size: calc(1* var(--font-size));
         line-height: calc(.9* var(--line-height));
