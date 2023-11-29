@@ -620,3 +620,35 @@ footer p {
     }
 
 }
+
+@media (max-height: 864px) and (max-width: 768px){
+
+    #home-main {
+        height: 75vh;
+    }
+
+}
+
+@media (max-height: 798px) and (max-width: 768px){
+
+    #home-main {
+        height: 65vh;
+    }
+
+    #background-home {
+        height: 87vh;
+    }
+
+}
+
+@media (max-height: 735px) and (max-width: 768px){
+
+    #home-main {
+        height: 60vh;
+    }
+
+    #background-home {
+        height: 80vh;
+    }
+
+}
