@@ -176,14 +176,17 @@ a:hover {
 }
 
 blockquote:hover {
-    animation: SandCastle 30s;
+    animation: SandCastle 20s;
 }
 
 @keyframes SandCastle {
     0% {
         opacity: 100%;
     }
-    10% {
+    5% {
+        opacity: 100%;
+    }
+    25% {
         opacity: 0%;
     }
     100% {
